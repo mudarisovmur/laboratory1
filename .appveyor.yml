@@ -15,4 +15,4 @@ install:
 
 test_script:
   - cd flaskapp
-  - py -m st.sh
+  - py -m /st.sh
