@@ -10,7 +10,6 @@ environment:
 build: false
 
 install:
-  - py -m pip install tox
   - py -m pip install flask
   - py -m pip install gunicorn
 
