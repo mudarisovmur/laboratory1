@@ -14,5 +14,4 @@ install:
   - py -m pip install gunicorn
 
 test_script:
-  - py -m flaskapp
-  - py -m ./st.sh
+  - py -m flaskapp/st.sh
