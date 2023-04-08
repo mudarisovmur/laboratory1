@@ -16,7 +16,7 @@ install:
   - py -m pip install flask-bootstrap
   - py -m pip install flask-wtf
   - py -m pip install pillow
-  - py -m pip install tensorflow==2.0.0-alpha0
+  - py -m pip install tensorflow
   - py -m pip install keras
 
 test_script:
