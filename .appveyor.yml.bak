@@ -1,0 +1,24 @@
+# appveyor.yml - https://www.appveyor.com/docs/lang/python
+---
+image:
+  - Visual Studio 2019
+
+environment:
+  matrix:
+  - TOXENV: py310
+
+build: false
+
+install:
+  - py -m pip install flask
+  - py -m pip install gunicorn
+  - py -m pip install requests
+  - py -m pip install flask-bootstrap
+  - py -m pip install flask-wtf
+  - py -m pip install pillow
+  - py -m pip install tensorflow
+  - py -m pip install keras
+
+test_script:
+  - cd flaskapp
+  - st.sh
