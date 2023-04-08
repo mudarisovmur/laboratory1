@@ -36,7 +36,7 @@ app.config['RECAPTCHA_OPTIONS'] = {'theme': 'white'}
 from flask_bootstrap import Bootstrap
 bootstrap = Bootstrap(app)
 # создаем форму для загрузки файла
-    class NetForm(FlaskForm):
+class NetForm(FlaskForm):
     # поле для введения строки, валидируется наличием данных
     # валидатор проверяет введение данных после нажатия кнопки submit
     # и указывает пользователю ввести данные, если они не введены
